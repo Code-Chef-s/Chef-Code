@@ -1,149 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Chef's Seafood</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Code Chef's Seafood</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="src/style.css">
-</head>
-<body>
-  <header>
-    <h1>Code Chef's Seafood</h1>
-    <nav></nav>
-  </header>
+  <body>
+    <header>
+      <h1>Code Chef's Seafood</h1>
+      <nav></nav>
+    </header>
 
-  <main> 
-    <section id="seafood-list-container">
-      <h2 id="seafood-menu">Seafood Menu</h2>
-      <ul id="seafood-list">
-        <li>
-          <h3>Baked salmon with fennel & tomatoes</h3>
-          <img src="https://www.themealdb.com/images/media/meals/1548772327.jpg" alt="Baked salmon with fennel & tomatoes">
-        </li>
-        <li>
-          <h3>Cajun spiced fish tacos</h3>
-          <img src="https://www.themealdb.com/images/media/meals/uvuyxu1503067369.jpg" alt="Cajun spiced fish tacos">
-        </li>
-        <li>
-          <h3>Escovitch Fish</h3>
-          <img src="https://www.themealdb.com/images/media/meals/1520084413.jpg" alt="Escovitch Fish">
-        </li>
-        <li>
-          <h3>Fish fofos</h3>
-          <img src="https://www.themealdb.com/images/media/meals/a15wsa1614349126.jpg" alt="Fish fofos">
-        </li>
-        <li>
-          <h3>Fish pie</h3>
-          <img src="https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg" alt="Fish pie">
-        </li>
-        <li>
-          <h3>Fish Soup (Ukha)</h3>
-          <img src="https://www.themealdb.com/images/media/meals/7n8su21699013057.jpg" alt="Fish Soup (Ukha)">
-        </li>
-        <li>
-          <h3>Fish Stew with Rouille</h3>
-          <img src="https://www.themealdb.com/images/media/meals/vptqpw1511798500.jpg" alt="Fish Stew with Rouille">
-        </li>
-        <li>
-          <h3>Garides Saganaki</h3>
-          <img src="https://www.themealdb.com/images/media/meals/wuvryu1468232995.jpg" alt="Garides Saganaki">
-        </li>
-        <li>
-          <h3>Grilled Portuguese sardines</h3>
-          <img src="https://www.themealdb.com/images/media/meals/lpd4wy1614347943.jpg" alt="Grilled Portuguese sardines">
-        </li>
-        <li>
-          <h3>Honey Teriyaki Salmon</h3>
-          <img src="https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg" alt="Honey Teriyaki Salmon">
-        </li>
-        <li>
-          <h3>Kedgeree</h3>
-          <img src="https://www.themealdb.com/images/media/meals/utxqpt1511639216.jpg" alt="Kedgeree">
-        </li>
-        <li>
-          <h3>Kung Po Prawns</h3>
-          <img src="https://www.themealdb.com/images/media/meals/1525873040.jpg" alt="Kung Po Prawns">
-        </li>
-        <li>
-          <h3>Laksa King Prawn Noodles</h3>
-          <img src="https://www.themealdb.com/images/media/meals/rvypwy1503069308.jpg" alt="Laksa King Prawn Noodles">
-        </li>
-        <li>
-          <h3>Mediterranean Pasta Salad</h3>
-          <img src="https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg" alt="Mediterranean Pasta Salad">
-        </li>
-        <li>
-          <h3>Mee goreng mamak</h3>
-          <img src="https://www.themealdb.com/images/media/meals/xquakq1619787532.jpg" alt="Mee goreng mamak">
-        </li>
-        <li>
-          <h3>Nasi lemak</h3>
-          <img src="https://www.themealdb.com/images/media/meals/wai9bw1619788844.jpg" alt="Nasi lemak">
-        </li>
-        <li>
-          <h3>Portuguese fish stew (Caldeirada de peixe)</h3>
-          <img src="https://www.themealdb.com/images/media/meals/do7zps1614349775.jpg" alt="Portuguese fish stew (Caldeirada de peixe)">
-        </li>
-        <li>
-          <h3>Recheado Masala Fish</h3>
-          <img src="https://www.themealdb.com/images/media/meals/uwxusv1487344500.jpg" alt="Recheado Masala Fish">
-        </li>
-        <li>
-          <h3>Salmon Avocado Salad</h3>
-          <img src="https://www.themealdb.com/images/media/meals/1549542994.jpg" alt="Salmon Avocado Salad">
-        </li>
-        <li>
-          <h3>Salmon Prawn Risotto</h3>
-          <img src="https://www.themealdb.com/images/media/meals/xxrxux1503070723.jpg" alt="Salmon Prawn Risotto">
-        </li>
-        <li>
-          <h3>Saltfish and Ackee</h3>
-          <img src="https://www.themealdb.com/images/media/meals/vytypy1511883765.jpg" alt="Saltfish and Ackee">
-        </li>
-        <li>
-          <h3>Seafood fideuà</h3>
-          <img src="https://www.themealdb.com/images/media/meals/wqqvyq1511179730.jpg" alt="Seafood fideuà">
-        </li>
-        <li>
-          <h3>Shrimp Chow Fun</h3>
-          <img src="https://www.themealdb.com/images/media/meals/1529445434.jpg" alt="Shrimp Chow Fun">
-        </li>
-        <li>
-          <h3>Sledz w Oleju (Polish Herrings)</h3>
-          <img src="https://www.themealdb.com/images/media/meals/7ttta31593350374.jpg" alt="Sledz w Oleju (Polish Herrings)">
-        </li>
-        <li>
-          <h3>Spring onion and prawn empanadas</h3>
-          <img src="https://www.themealdb.com/images/media/meals/1c5oso1614347493.jpg" alt="Spring onion and prawn empanadas">
-        </li>
-        <li>
-          <h3>Sushi</h3>
-          <img src="https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg" alt="Sushi">
-        </li>
-        <li>
-          <h3>Three Fish Pie</h3>
-          <img src="https://www.themealdb.com/images/media/meals/spswqs1511558697.jpg" alt="Three Fish Pie">
-        </li>
-        <li>
-          <h3>Tuna and Egg Briks</h3>
-          <img src="https://www.themealdb.com/images/media/meals/2dsltq1560461468.jpg" alt="Tuna and Egg Briks">
-        </li>
-        <li>
-          <h3>Tuna Nicoise</h3>
-          <img src="https://www.themealdb.com/images/media/meals/yypwwq1511304979.jpg" alt="Tuna Nicoise">
-        </li>
-      </ul>
-    </section>
-  </main>
- 
-  <script src="main.js"></script>
-  <script src="allMeals.js"></script>
-</body>
+    <main>
+      <section id="seafood-list-container">
+        <h2 id="seafood-menu">Seafood Menu</h2>
+        <ul id="seafood-list">
+          <li>
+            <h3>Baked salmon with fennel & tomatoes</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/1548772327.jpg"
+              alt="Baked salmon with fennel & tomatoes"
+            />
+          </li>
+
+          <li>
+            <h3>Cajun spiced fish tacos</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/uvuyxu1503067369.jpg"
+              alt="Cajun spiced fish tacos"
+            />
+          </li>
+          <li>
+            <h3>Escovitch Fish</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/1520084413.jpg"
+              alt="Escovitch Fish"
+            />
+          </li>
+          <li>
+            <h3>Fish fofos</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/a15wsa1614349126.jpg"
+              alt="Fish fofos"
+            />
+          </li>
+          <li>
+            <h3>Fish pie</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg"
+              alt="Fish pie"
+            />
+          </li>
+          <li>
+            <h3>Fish Soup (Ukha)</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/7n8su21699013057.jpg"
+              alt="Fish Soup (Ukha)"
+            />
+          </li>
+          <li>
+            <h3>Fish Stew with Rouille</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/vptqpw1511798500.jpg"
+              alt="Fish Stew with Rouille"
+            />
+          </li>
+          <li>
+            <h3>Garides Saganaki</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/wuvryu1468232995.jpg"
+              alt="Garides Saganaki"
+            />
+          </li>
+          <li>
+            <h3>Grilled Portuguese sardines</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/lpd4wy1614347943.jpg"
+              alt="Grilled Portuguese sardines"
+            />
+          </li>
+          <li>
+            <h3>Honey Teriyaki Salmon</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg"
+              alt="Honey Teriyaki Salmon"
+            />
+          </li>
+          <li>
+            <h3>Kedgeree</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/utxqpt1511639216.jpg"
+              alt="Kedgeree"
+            />
+          </li>
+          <li>
+            <h3>Kung Po Prawns</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/1525873040.jpg"
+              alt="Kung Po Prawns"
+            />
+          </li>
+          <li>
+            <h3>Laksa King Prawn Noodles</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/rvypwy1503069308.jpg"
+              alt="Laksa King Prawn Noodles"
+            />
+          </li>
+          <li>
+            <h3>Mediterranean Pasta Salad</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg"
+              alt="Mediterranean Pasta Salad"
+            />
+          </li>
+          <li>
+            <h3>Mee goreng mamak</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/xquakq1619787532.jpg"
+              alt="Mee goreng mamak"
+            />
+          </li>
+          <li>
+            <h3>Nasi lemak</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/wai9bw1619788844.jpg"
+              alt="Nasi lemak"
+            />
+          </li>
+          <li>
+            <h3>Portuguese fish stew (Caldeirada de peixe)</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/do7zps1614349775.jpg"
+              alt="Portuguese fish stew (Caldeirada de peixe)"
+            />
+          </li>
+          <li>
+            <h3>Recheado Masala Fish</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/uwxusv1487344500.jpg"
+              alt="Recheado Masala Fish"
+            />
+          </li>
+          <li>
+            <h3>Salmon Avocado Salad</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/1549542994.jpg"
+              alt="Salmon Avocado Salad"
+            />
+          </li>
+          <li>
+            <h3>Salmon Prawn Risotto</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/xxrxux1503070723.jpg"
+              alt="Salmon Prawn Risotto"
+            />
+          </li>
+          <li>
+            <h3>Saltfish and Ackee</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/vytypy1511883765.jpg"
+              alt="Saltfish and Ackee"
+            />
+          </li>
+          <li>
+            <h3>Seafood fideuà</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/wqqvyq1511179730.jpg"
+              alt="Seafood fideuà"
+            />
+          </li>
+          <li>
+            <h3>Shrimp Chow Fun</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/1529445434.jpg"
+              alt="Shrimp Chow Fun"
+            />
+          </li>
+          <li>
+            <h3>Sledz w Oleju (Polish Herrings)</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/7ttta31593350374.jpg"
+              alt="Sledz w Oleju (Polish Herrings)"
+            />
+          </li>
+          <li>
+            <h3>Spring onion and prawn empanadas</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/1c5oso1614347493.jpg"
+              alt="Spring onion and prawn empanadas"
+            />
+          </li>
+          <li>
+            <h3>Sushi</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg"
+              alt="Sushi"
+            />
+          </li>
+          <li>
+            <h3>Three Fish Pie</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/spswqs1511558697.jpg"
+              alt="Three Fish Pie"
+            />
+          </li>
+          <li>
+            <h3>Tuna and Egg Briks</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/2dsltq1560461468.jpg"
+              alt="Tuna and Egg Briks"
+            />
+          </li>
+          <li>
+            <h3 class="meal">Tuna Nicoise</h3>
+            <img
+              src="https://www.themealdb.com/images/media/meals/yypwwq1511304979.jpg"
+              alt="Tuna Nicoise"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <!--Modal stucture-->
+      <dialog id="meal-modal">
+        <button autofocus id="close-modal">X</button>
+        <h2 id="meal-name"></h2>
+        <p id="meal-description"></p>
+
+        <h3>ingredients:</h3>
+        <ul id="meal-ingredients"></ul>
+
+        <h3>Area:</h3>
+        <p id="meal-area"></p>
+      </dialog>
+    </main>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
 </html>
-

@@ -1,10 +1,8 @@
 import "./style.css";
-import { fetchOneThing, fetchAllMeals } from "./modal";
+import { fetchMeals } from "./modal";
 
 const main = () => {
-  // code here
-  fetchOneThing();
-  fetchAllMeals();
+  fetchMeals();
 };
 
 main();
