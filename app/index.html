@@ -1,237 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Chef's Seafood</title>
+<html>
+<head>
+<title>Code Chef's Seafood</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="src/style.css" />
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/style.css" />
-  </head>
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#menu" onclick="w3_close()" class="w3-bar-item w3-button">Menu</a>
+</nav>
 
-  <body>
-    <header>
-      <h1>Code Chef's Seafood</h1>
-      <nav></nav>
-    </header>
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16">Seafood Menu</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
-    <main>
-      <section id="seafood-list-container">
-        <h2 id="seafood-menu">Seafood Menu</h2>
-        <ul id="seafood-list">
-          <li>
-            <h3>Baked salmon with fennel & tomatoes</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/1548772327.jpg"
-              alt="Baked salmon with fennel & tomatoes"
-            />
-          </li>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="menu">
+    <div class="w3-quarter">
+      <h3>Baked Salmon with Fennel & Tomatoes</h3>
+      <p>Flavorful and eye-catching dish.</p>
+      <img src="https://www.themealdb.com/images/media/meals/1548772327.jpg" alt="Baked Salmon with Fennel & Tomatoes" style="width:100%">
+    </div>
 
-          <li>
-            <h3>Cajun spiced fish tacos</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/uvuyxu1503067369.jpg"
-              alt="Cajun spiced fish tacos"
-            />
-          </li>
-          <li>
-            <h3>Escovitch Fish</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/1520084413.jpg"
-              alt="Escovitch Fish"
-            />
-          </li>
-          <li>
-            <h3>Fish fofos</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/a15wsa1614349126.jpg"
-              alt="Fish fofos"
-            />
-          </li>
-          <li>
-            <h3>Fish pie</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg"
-              alt="Fish pie"
-            />
-          </li>
-          <li>
-            <h3>Fish Soup (Ukha)</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/7n8su21699013057.jpg"
-              alt="Fish Soup (Ukha)"
-            />
-          </li>
-          <li>
-            <h3>Fish Stew with Rouille</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/vptqpw1511798500.jpg"
-              alt="Fish Stew with Rouille"
-            />
-          </li>
-          <li>
-            <h3>Garides Saganaki</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/wuvryu1468232995.jpg"
-              alt="Garides Saganaki"
-            />
-          </li>
-          <li>
-            <h3>Grilled Portuguese sardines</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/lpd4wy1614347943.jpg"
-              alt="Grilled Portuguese sardines"
-            />
-          </li>
-          <li>
-            <h3>Honey Teriyaki Salmon</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg"
-              alt="Honey Teriyaki Salmon"
-            />
-          </li>
-          <li>
-            <h3>Kedgeree</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/utxqpt1511639216.jpg"
-              alt="Kedgeree"
-            />
-          </li>
-          <li>
-            <h3>Kung Po Prawns</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/1525873040.jpg"
-              alt="Kung Po Prawns"
-            />
-          </li>
-          <li>
-            <h3>Laksa King Prawn Noodles</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/rvypwy1503069308.jpg"
-              alt="Laksa King Prawn Noodles"
-            />
-          </li>
-          <li>
-            <h3>Mediterranean Pasta Salad</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg"
-              alt="Mediterranean Pasta Salad"
-            />
-          </li>
-          <li>
-            <h3>Mee goreng mamak</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/xquakq1619787532.jpg"
-              alt="Mee goreng mamak"
-            />
-          </li>
-          <li>
-            <h3>Nasi lemak</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/wai9bw1619788844.jpg"
-              alt="Nasi lemak"
-            />
-          </li>
-          <li>
-            <h3>Portuguese fish stew (Caldeirada de peixe)</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/do7zps1614349775.jpg"
-              alt="Portuguese fish stew (Caldeirada de peixe)"
-            />
-          </li>
-          <li>
-            <h3>Recheado Masala Fish</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/uwxusv1487344500.jpg"
-              alt="Recheado Masala Fish"
-            />
-          </li>
-          <li>
-            <h3>Salmon Avocado Salad</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/1549542994.jpg"
-              alt="Salmon Avocado Salad"
-            />
-          </li>
-          <li>
-            <h3>Salmon Prawn Risotto</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/xxrxux1503070723.jpg"
-              alt="Salmon Prawn Risotto"
-            />
-          </li>
-          <li>
-            <h3>Saltfish and Ackee</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/vytypy1511883765.jpg"
-              alt="Saltfish and Ackee"
-            />
-          </li>
-          <li>
-            <h3>Seafood fideuà</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/wqqvyq1511179730.jpg"
-              alt="Seafood fideuà"
-            />
-          </li>
-          <li>
-            <h3>Shrimp Chow Fun</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/1529445434.jpg"
-              alt="Shrimp Chow Fun"
-            />
-          </li>
-          <li>
-            <h3>Sledz w Oleju (Polish Herrings)</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/7ttta31593350374.jpg"
-              alt="Sledz w Oleju (Polish Herrings)"
-            />
-          </li>
-          <li>
-            <h3>Spring onion and prawn empanadas</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/1c5oso1614347493.jpg"
-              alt="Spring onion and prawn empanadas"
-            />
-          </li>
-          <li>
-            <h3>Sushi</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg"
-              alt="Sushi"
-            />
-          </li>
-          <li>
-            <h3>Three Fish Pie</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/spswqs1511558697.jpg"
-              alt="Three Fish Pie"
-            />
-          </li>
-          <li>
-            <h3>Tuna and Egg Briks</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/2dsltq1560461468.jpg"
-              alt="Tuna and Egg Briks"
-            />
-          </li>
-          <li>
-            <h3 class="meal">Tuna Nicoise</h3>
-            <img
-              src="https://www.themealdb.com/images/media/meals/yypwwq1511304979.jpg"
-              alt="Tuna Nicoise"
-            />
-          </li>
-        </ul>
-      </section>
+    <div class="w3-quarter">
+      <h3>Cajun Spiced Fish Tacos</h3>
+      <p>A taco filled with fish that has been seasoned with a bold, spicy Cajun spice blend, typically featuring flavors like cayenne pepper, garlic, and paprika, often served on a warm tortilla with toppings like crunchy cabbage slaw, a creamy remoulade, and a zesty salsa, creating a delicious combination of heat and tanginess.</p>
+      <img src="https://www.themealdb.com/images/media/meals/uvuyxu1503067369.jpg" alt="Cajun Spiced Fish Tacos" style="width:100%">
+    </div>
 
-      <!--Modal stucture-->
+    <div class="w3-quarter">
+      <h3>Honey Teriyaki Salmon</h3>
+        <p>A deliciously sweet and savory dish that combines tender, flaky salmon with a glossy teriyaki glaze.</p>
+        <img src="https://www.themealdb.com/images/media/meals/xxyupu1468262513.jpg" alt="Honey Teriyaki Salmon" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Kedgeree</h3>
+        <p>A comforting and aromatic dish that combines flaked smoked fish, usually haddock, with rice, boiled eggs, and a blend of spices.</p>
+        <img src="https://www.themealdb.com/images/media/meals/utxqpt1511639216.jpg" alt="Kedgeree" style="width:100%">
+      </div>
+
+    <div class="w3-quarter">
+      <h3>Escovitch Fish</h3>
+      <p>Crispy fried fish, topped with a tangy, spicy pickled sauce made with vinegar, onions, carrots, bell peppers, scotch bonnet peppers, and allspice.</p>
+      <img src="https://www.themealdb.com/images/media/meals/1520084413.jpg" alt="Escovitch Fish" style="width:100%">
+    </div>
+
+    <div class="w3-quarter">
+      <h3>Mee Goreng Mamak</h3>
+      <p>A flavorful and spicy stir-fried noodle dish that hails from the Malaysian Indian Muslim community, commonly known as Mamak. This street food favorite is a harmonious blend of sweet, savory, and tangy flavors with a hint of spice.</p>
+        <img src="https://www.themealdb.com/images/media/meals/xquakq1619787532.jpg" alt="Mee Goreng Mamak" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Seafood fideuà</h3>
+        <p>A traditional Spanish dish originating from the Valencian region, similar to paella but made with short, thin noodles (fideuà) instead of rice. This dish is a celebration of fresh seafood and Mediterranean flavors, cooked in a wide, shallow pan for even cooking and presentation.</p>
+        <img src="https://www.themealdb.com/images/media/meals/wqqvyq1511179730.jpg" alt="Seafood fideuà" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Shrimp Chow Fun</h3>
+        <p>A classic Cantonese stir-fried noodle dish that features tender shrimp and wide, flat rice noodles known as ho fun. The dish is renowned for its smoky, slightly charred flavor, often achieved through a high-heat wok cooking technique called wok hei.</p>
+        <img src="https://www.themealdb.com/images/media/meals/1529445434.jpg" alt="Shrimp Chow Fun" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Sledz w Oleju (Polish Herrings)</h3>
+        <p>A traditional Polish dish that showcases marinated herring fillets preserved in a flavorful mixture of oil and aromatic seasonings.</p>
+        <img src="https://www.themealdb.com/images/media/meals/7ttta31593350374.jpg" alt="Sledz w Oleju (Polish Herrings)" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Tuna and Egg Briks</h3>
+        <p> A brik is a thin pastry, similar to phyllo or spring roll wrappers, that is filled with a delicious combination of tuna, egg, and seasonings, then fried until golden and crispy.</p>
+        <img src="https://www.themealdb.com/images/media/meals/2dsltq1560461468.jpg" alt="Tuna and Egg Briks" style="width:100%">
+      </div>
+
+
+    <div class="w3-quarter">
+      <h3>Fish Fofos</h3>
+      <p> A flavorful seafood dish often prepared using fresh fish as the main ingredient, combined with rich, aromatic spices.</p>
+      <img src="https://www.themealdb.com/images/media/meals/a15wsa1614349126.jpg" alt="Fish Fofos" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <h3>Fish Pie</h3>
+      <p>A comforting and hearty dish made with a creamy filling of flaked fish, often a mix of white fish and smoked fish.</p>
+      <img src="https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg" alt="Fish Pie" style="width:100%">
+    </div>
+
+    <div class="w3-quarter">
+      <h3>Fish Soup (Ukha)</h3>
+      <p>A traditional Russian soup made with fresh fish and a light, flavorful broth.</p>
+      <img src="https://www.themealdb.com/images/media/meals/7n8su21699013057.jpg" alt="Fish Soup (Ukha)" style="width:100%">
+    </div>
+
+    <div class="w3-quarter">
+      <h3>Fish Stew with Rouille</h3>
+      <p>Fish Stew with Rouille is a hearty and elegant dish, perfect for showcasing fresh seafood and rich Mediterranean flavors.</p>
+      <img src="https://www.themealdb.com/images/media/meals/vptqpw1511798500.jpg" alt="Fish Stew with Rouille" style="width:100%">
+    </div>
+
+    <div class="w3-quarter">
+      <h3>Kung Po Prawns</h3>
+      <p> a vibrant and flavorful Chinese dish that originates from the Sichuan province, known for its bold, spicy, and slightly sweet flavors.</p>
+        <img src="https://www.themealdb.com/images/media/meals/1525873040.jpg" alt="Kung Po Prawns" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Nasi Lemak</h3>
+        <p>A beloved Malaysian dish, often considered the country’s national dish, celebrated for its rich and aromatic flavors.</p>
+        <img src="https://www.themealdb.com/images/media/meals/wai9bw1619788844.jpg" alt="Nasi Lemak" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Spring onion and prawn empanadas</h3>
+        <p>A delightful variation of the classic Latin American pastry. These golden, crispy turnovers are filled with a savory mixture of tender prawns and aromatic spring onions, creating a delicious blend of flavors in each bite.</p>
+        <img src="https://www.themealdb.com/images/media/meals/1c5oso1614347493.jpg" alt="Spring onion and prawn empanadas" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Sushi</h3>
+        <p>A Japanese dish that consists of vinegared rice accompanied by various ingredients such as raw or cooked fish, seafood, vegetables, and occasionally tropical fruits.</p>
+        <img src="https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg" alt="Sushi" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Three Fish Pie</h3>
+        <p>A rich and hearty British dish that combines a medley of three types of fish, typically white fish like cod, haddock, and salmon, all baked together in a creamy sauce and topped with a layer of mashed potatoes.</p>
+        <img src="https://www.themealdb.com/images/media/meals/spswqs1511558697.jpg" alt="Three Fish Pie" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Mediterranean Pasta Salad</h3>
+        <p>A fresh, vibrant dish that captures the flavors of the Mediterranean region.</p>
+        <img src="https://www.themealdb.com/images/media/meals/wvqpwt1468339226.jpg" alt="Mediterranean Pasta Salad" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Salmon Avocado Salad</h3>
+        <p>A fresh and light, nutritious dish that combines the richness of fresh salmon with the creamy texture of avocado, creating a delightful contrast in both flavor and texture. </p>
+        <img src="https://www.themealdb.com/images/media/meals/1549542994.jpg" alt="Salmon Avocado Salad" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Salmon Prawn Risotto</h3>
+        <p>A luxurious and flavorful dish that combines creamy, comforting risotto with the rich tastes of fresh salmon and succulent prawns.</p>
+        <img src="https://www.themealdb.com/images/media/meals/xxrxux1503070723.jpg" alt="Salmon Prawn Risotto" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Portuguese fish stew (Caldeirada de peixe)</h3>
+        <p>A traditional Portuguese fish stew, celebrated for its rich, hearty flavors and fresh ingredients.</p>
+        <img src="https://www.themealdb.com/images/media/meals/do7zps1614349775.jpg" alt="Portuguese fish stew (Caldeirada de peixe)" style="width:100%">
+        
+      </div>
+
+    <div class="w3-quarter">
+      <h3>Grilled Portuguese Sardines</h3>
+      <p>A beloved dish deeply rooted in Portuguese culinary tradition. This simple yet flavorful preparation features fresh sardines seasoned with sea salt, then grilled over an open flame, which imparts a smoky, charred flavor to the fish.</p>
+        <img src="https://www.themealdb.com/images/media/meals/lpd4wy1614347943.jpg" alt="Grilled Portuguese Sardines" style="width:100%">
+       
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Tuna Nicoise</h3>
+        <p>A classic French salad that hails from the coastal region of Nice, offering a vibrant and balanced combination of flavors.</p>
+        <img src="https://www.themealdb.com/images/media/meals/yypwwq1511304979.jpg" alt="Tuna Nicoise" style="width:100%">
+      </div>
+
+      <div class="w3-quarter">
+        <h3>Saltfish and Ackee</h3>
+        <p>A Jamaica's national dish and a beloved staple in Caribbean cuisine. The dish features salted codfish (saltfish) paired with ackee, a tropical fruit that is native to West Africa but has become an essential ingredient in Jamaican cooking.</p>
+        <img src="https://www.themealdb.com/images/media/meals/vytypy1511883765.jpg" alt="Grilled Portuguese Sardines" style="width:100%">
+      </div>
+
+    <div class="w3-quarter">
+      <h3>Garides Saganaki</h3>
+      <p>A traditional Greek dish featuring succulent shrimp cooked in a rich tomato-based sauce with aromatic herbs and spices.</p>
+      <img src="https://www.themealdb.com/images/media/meals/wuvryu1468232995.jpg" alt="Garides Saganaki" style="width:100%">
+      
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+ 
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+<!--Modal stucture-->
       <dialog id="meal-modal">
         <button autofocus id="close-modal">X</button>
         <h2 id="meal-name"></h2>
