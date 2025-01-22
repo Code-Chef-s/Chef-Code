@@ -5,18 +5,20 @@ export const openModal = async (mealId) => {
 
   try {
     const data = await fetchData(url);
+    //console.log(data);
+
     if (data.meals && data.meals.length > 0) {
       const meal = data.meals[0];
 
       document.getElementById("meal-name").textContent = meal.strMeal;
 
       document.getElementById("meal-description").textContent =
-        meal.strInstrcutions;
+        meal.strInstructions;
       document.getElementById("meal-area").textContent = meal.strArea;
 
       const ingredientsList = document.getElementById("meal-ingredients");
       ingredientsList.innerHTML = "";
-      for (let i = 0; i <= 20; i++) {
+      for (let i = 1; i <= 20; i++) {
         const ingredient = meal[`strIngredient${i}`];
         const measure = meal[`strMeasure${i}`];
         if (ingredient) {
@@ -41,6 +43,7 @@ export const fetchMeals = async () => {
 
   try {
     const data = await fetchData(url);
+    //console.log(data);
     if (data.meals) {
       displaySeafoodList(data.meals);
     } else {
