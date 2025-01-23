@@ -25,9 +25,46 @@ header h1 {
   font-family: "Dosis", sans-serif;
 }
 
-/* Navigation (currently empty) */
+/* Navigation */
 nav {
   margin-top: 0.5rem;
+}
+
+/* Search Bar */
+#search-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+#search-input input {
+  width: 300px;
+  padding: 0.5rem;
+  border: 2px solid #0f273f;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#search-input input:focus {
+  border-color: #1c487c;
+}
+
+#search-input button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #1c487c;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#search-input button:hover {
+  background-color: #0f273f;
 }
 
 /* Main Content */
@@ -158,3 +195,4 @@ h3 {
     width: 100%;
   }
 }
+
