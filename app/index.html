@@ -17,7 +17,17 @@
   <body>
     <header>
       <h1>Code Chef's Seafood</h1>
-      <nav></nav>
+      <nav>
+        <form id="search-input">
+          <label for="search-input">Search for seafood:</label>
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search for seafood..."
+          />
+          <button type="search">Search</button>
+        </form>
+      </nav>
     </header>
 
     <main>
@@ -288,7 +298,7 @@
       </div>
       <!-- Modal Structure -->
       <dialog id="meal-modal">
-        <button autofocus id="close-modal">X</button>
+        <button autofocus aria-label="Close" id="close-modal">X</button>
         <h2 id="meal-name"></h2>
         <p id="meal-description"></p>
 
