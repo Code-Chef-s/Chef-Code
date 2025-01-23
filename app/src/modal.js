@@ -72,6 +72,7 @@ const displaySeafoodList = (meals) => {
     listItem.appendChild(mealImg);
     seafoodListContainer.appendChild(listItem);
 
+    mealName.addEventListener("click", () => openModal(meal.idMeal));
     listItem.addEventListener("click", () => openModal(meal.idMeal));
   });
 };
