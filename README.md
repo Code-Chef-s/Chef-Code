@@ -6,11 +6,11 @@ Code Chef's Seafood is a beautifully designed, interactive web application built
 
 This project was built to demonstrate proficiency in modern web development technologies and practices including async/await, DOM manipulation, API integration, and responsive design, and is intended for developers looking to showcase their skills, potential employers evaluating technical capabilities, and anyone interested in learning modern web development patterns.
 
-## 🖼️ Screenshots
+![Code Chef's Seafood Application Screenshot](./readMe-images/Screenshot%202025-08-13%20at%204.58.38 PM.png)
 
-![Code Chef's Seafood Application Screenshot](./readMe-images/Screenshot%202025-08-13%20at%204.58.38%20PM.png)
+![Modal](./readMe-images/Screenshot%202025-08-13%20at%2010.54.43 PM.png)
 
-## 🌐 Deployment Link
+## Deployment Link
 
 [Please add a link to your deployed project or a video demo.]
 
@@ -37,7 +37,7 @@ This project was built to demonstrate proficiency in modern web development tech
 - **Architecture**: ES6 Modules, Async/Await, Event-driven programming
 - **Data Handling**: Fetch API with error handling
 
-## 🚀 Project Set Up Instructions
+## Project Set Up Instructions
 
 To get a local copy up and running, follow these simple steps.
 
@@ -82,72 +82,7 @@ npm run build
 npm run preview
 ```
 
-## 📁 Project Structure
-
-```
-Chef-Code/
-├── app/
-│   ├── src/
-│   │   ├── main.js          # Main application logic
-│   │   ├── modal.js         # Modal functionality and API calls
-│   │   ├── fetch-helpers.js # Fetch utility functions
-│   │   └── style.css        # Application styles
-│   ├── index.html           # Main HTML file
-│   ├── vite.config.js       # Vite configuration
-│   └── package.json         # Project dependencies
-├── LICENSE
-└── README.md
-```
-
-## 🎯 Key Components
-
-### Main Application (`main.js`)
-
-- Initializes the application
-- Sets up search functionality
-- Handles real-time recipe filtering
-
-### Modal System (`modal.js`)
-
-- Fetches detailed recipe information from TheMealDB API
-- Displays recipe details in a modal dialog
-- Renders ingredients and cooking instructions
-
-### Fetch Utilities (`fetch-helpers.js`)
-
-- Reusable fetch wrapper with error handling
-- Content-type detection and response parsing
-- Comprehensive error logging
-
-### Styling (`style.css`)
-
-- Responsive design with CSS Grid and Flexbox
-- Modern visual design with smooth transitions
-- Mobile-first approach
-
-## 🎨 Features in Detail
-
-### Recipe Search
-
-- Real-time filtering as you type
-- Case-insensitive search
-- Instant visual feedback
-
-### Recipe Modal
-
-- Detailed recipe information
-- Complete ingredient list with measurements
-- Step-by-step cooking instructions
-- Recipe origin and category information
-
-### Responsive Design
-
-- Mobile-optimized layout
-- Touch-friendly interactions
-- Adaptive image sizing
-- Flexible grid system
-
-## 🤝 Contribution Instructions
+## Contribution Instructions
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
@@ -161,7 +96,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 Don't forget to star the project! Thanks again!
 
-## 🔄 Development Workflow
+## Development Workflow
 
 ### Branching & Pull Requests
 
@@ -191,7 +126,7 @@ Don't forget to star the project! Thanks again!
 - Write specific and descriptive cards for all tasks.
 - PR descriptions should be detailed, outlining the changes made and referencing the corresponding task on the scrum board.
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
