@@ -14,13 +14,13 @@ This project was built to demonstrate proficiency in modern web development tech
 
 [Please add a link to your deployed project or a video demo.]
 
-## 🔗 Additional Links
+## Additional Links
 
 - **Wireframes**: [Link to your wireframes (e.g., Figma, Balsamiq)]
 - **Entity-Relationship Diagram (ERD)**: [Link or image of your ERD]
 - **Project Proposal**: [Link to your project proposal document, if available]
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
