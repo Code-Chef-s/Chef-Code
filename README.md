@@ -12,7 +12,7 @@ This project was built to demonstrate proficiency in modern web development tech
 
 ## Deployment Link
 
-[Please add a link to your deployed project or a video demo.]
+https://chef-code-seafood.onrender.com/
 
 ## Additional Links
 
@@ -130,7 +130,7 @@ Don't forget to star the project! Thanks again!
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [TheMealDB](https://www.themealdb.com/) for providing the recipe API
 - Google Fonts for the beautiful typography
