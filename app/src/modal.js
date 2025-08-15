@@ -1,5 +1,6 @@
 import { fetchData } from "./fetch-helpers";
 
+// This function opens the modal and displays the meal details
 export const openModal = async (mealId) => {
   const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`;
 
@@ -12,10 +13,23 @@ export const openModal = async (mealId) => {
 
       document.getElementById("meal-name").textContent = meal.strMeal;
 
-      document.getElementById("meal-description").textContent =
-        meal.strInstructions;
-      document.getElementById("meal-area").textContent = meal.strArea;
+      //Convert the instructions to numbered steps
+      const instructions = meal.strInstructions;
+      const steps = instructions
+        .split("\n")
+        .map((step, index) => `${index + 1}. ${step}`);
+      const descriptionContainer = document.getElementById("meal-description");
+      descriptionContainer.innerHTML = "";
 
+      const ol = document.createElement("ol");
+      steps.forEach((step, index) => {
+        const li = document.createElement("li");
+        li.textContent = step;
+        ol.appendChild(li);
+      });
+      descriptionContainer.appendChild(ol);
+
+      document.getElementById("meal-area").textContent = meal.strArea;
       const ingredientsList = document.getElementById("meal-ingredients");
       ingredientsList.innerHTML = "";
       for (let i = 1; i <= 20; i++) {
@@ -38,6 +52,7 @@ export const openModal = async (mealId) => {
   }
 };
 
+// This function fetches the meals and displays them in the list
 export const fetchMeals = async () => {
   const url = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood";
 
@@ -54,6 +69,7 @@ export const fetchMeals = async () => {
   }
 };
 
+// This function displays the meals in the list
 const displaySeafoodList = (meals) => {
   const seafoodListContainer = document.getElementById("seafood-list");
   seafoodListContainer.innerHTML = "";
@@ -76,6 +92,7 @@ const displaySeafoodList = (meals) => {
   });
 };
 
+// This function closes the modal
 const closeModal = () => {
   const modal = document.getElementById("meal-modal");
   modal.close();
