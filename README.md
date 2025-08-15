@@ -16,8 +16,8 @@ https://chef-code-seafood.onrender.com/
 
 ## Additional Links
 
-- **Wireframes**: [Link to your wireframes (e.g., Figma, Balsamiq)] https://excalidraw.com/
-- **Project Proposal**: [Link to your project proposal document, if available] https://docs.google.com/document/d/1u37tgYH5YWsd5h0n0RR4_u0UbUQ0tBuM5jvYArXpYro/edit?tab=t.0
+- **Wireframes**: [Click Me!](https://excalidraw.com/)
+- **Project Proposal**: [Click Me!](https://docs.google.com/document/d/1u37tgYH5YWsd5h0n0RR4_u0UbUQ0tBuM5jvYArXpYro/edit?tab=t.0)
 
 ## Tech Stack
 
