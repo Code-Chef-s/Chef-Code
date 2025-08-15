@@ -135,6 +135,13 @@ main {
   max-width: 600px;
   width: 80%;
   transition: opacity 0.3s ease-in-out;
+  border: none;
+  outline: none;
+}
+
+/* Ensure dialog backdrop is visible */
+#meal-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #close-modal {

@@ -34,9 +34,28 @@ export const openModal = async (mealId) => {
 
       descriptionContainer.appendChild(ol);
 
+      // Populate ingredients
+      const ingredientsContainer = document.getElementById("meal-ingredients");
+      ingredientsContainer.innerHTML = ""; // Clear existing content
+
+      for (let i = 1; i <= 20; i++) {
+        const ingredient = meal[`strIngredient${i}`];
+        const measure = meal[`strMeasure${i}`];
+
+        if (ingredient && ingredient.trim()) {
+          const li = document.createElement("li");
+          li.textContent = `${
+            measure ? measure.trim() : ""
+          } ${ingredient.trim()}`;
+          ingredientsContainer.appendChild(li);
+        }
+      }
+
       document.getElementById("meal-area").textContent = meal.strArea;
 
-      // ... existing code for ingredients ...
+      // Show the modal
+      const modal = document.getElementById("meal-modal");
+      modal.showModal();
     } else {
       console.error("No details");
     }
@@ -90,4 +109,10 @@ const closeModal = () => {
   modal.close();
 };
 
-document.getElementById("close-modal").addEventListener("click", closeModal);
+// Add event listener after DOM is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  const closeButton = document.getElementById("close-modal");
+  if (closeButton) {
+    closeButton.addEventListener("click", closeModal);
+  }
+});
